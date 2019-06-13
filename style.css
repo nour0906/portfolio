@@ -1,0 +1,19 @@
+.front {
+    display: flex;
+}
+
+.col {
+    height: 800px;
+    width: 720px;
+    margin: 20px;
+    background-color: black;
+
+}
+
+.sol {
+    background-image: url(grafik/solsikke.jpg);
+}
+
+img. {
+    width: 100%;
+}
