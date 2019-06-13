@@ -1,19 +1,80 @@
-.front {
-    display: flex;
-}
-
-.col {
-    height: 800px;
-    width: 720px;
-    margin: 20px;
-    background-color: black;
-
-}
-
-.sol {
-    background-image: url(grafik/solsikke.jpg);
-}
-
-img. {
+img {
     width: 100%;
+}
+
+/*MENU*/
+
+header nav {
+    flex-direction: row;
+    text-align: center;
+    justify-content: space-between;
+    margin: .2rem;
+    font-family: sans-serif;
+    padding: 6px;
+}
+
+header nav a:last-child {
+    border-right: 2px solid;
+    margin: 2px;
+    padding: 2px;
+}
+
+header nav a:link {
+    color: antiquewhite;
+    text-decoration: none;
+}
+
+/*visited link*/
+header nav a:visited {
+    color: blueviolet;
+    text-decoration: none;
+
+}
+
+/*mouse over link*/
+header nav a:hover {
+    color: cadetblue;
+    text-decoration: none;
+}
+
+/*selected link*/
+
+header nav a:active {
+    color: dodgerblue;
+    text-decoration: none;
+}
+
+/*MENUKNAP*/
+
+.hidden {
+    transform: scale(0.5);
+    transform: translate(1%);
+    opacity: 0;
+}
+
+#menuknap {
+    display: inline-block;
+}
+
+#menu {
+    list-style-type: none;
+    transition: transform .5s;
+    transform-origin: top right;
+}
+
+@media only screen and (min-width: 600px) {
+
+    #menuknap {
+        display: none;
+    }
+
+    #menu.hidden {
+        transform: translate(0);
+        opacity: 1;
+    }
+
+    #menu li {
+        display: inline-block;
+    }
+}
 }
